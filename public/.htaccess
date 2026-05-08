@@ -1,0 +1,7 @@
+Options -MultiViews
+AddType text/css .css
+AddType application/javascript .js
+AddType font/woff2 .woff2
+AddType image/svg+xml .svg
+
+ErrorDocument 404 /404.html
