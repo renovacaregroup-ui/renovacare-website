@@ -59,7 +59,7 @@ export default function RefundPolicy() {
           <section className="space-y-3">
             <h2 className="text-xl font-medium text-[var(--text-dark)]">6. Refund Process</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>All refund requests must be submitted in writing via email to enquiry@renovacare.my.</li>
+              <li>All refund requests must be submitted in writing via email to <a href="mailto:enquiry@renovacare.my" className="text-[var(--primary-gold)] hover:underline">enquiry@renovacare.my</a>.</li>
               <li>Approved refunds will be processed within 14 business days.</li>
               <li>Refunds will be credited back to the original payment method.</li>
             </ul>
@@ -76,8 +76,8 @@ export default function RefundPolicy() {
             <div className="bg-[var(--cream)] rounded-xl p-4 mt-2">
               <p><strong>RenovaCare Clinic & Wellness Centre</strong></p>
               <p>No 2-G, Jalan Eco Santuari 8/1A, Eco Santuari, Telok Panglima Garang, 42500 Selangor</p>
-              <p>Phone: +6012-939 7686</p>
-              <p>Email: enquiry@renovacare.my</p>
+              <p>Phone: <a href="tel:+60129397686" className="text-[var(--primary-gold)] hover:underline">+6012-939 7686</a></p>
+              <p>Email: <a href="mailto:enquiry@renovacare.my" className="text-[var(--primary-gold)] hover:underline">enquiry@renovacare.my</a></p>
             </div>
           </section>
         </div>
