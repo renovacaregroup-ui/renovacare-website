@@ -151,15 +151,15 @@ export default function BookingBar() {
           <AnimatePresence>
             {showWhatsAppQuestions && activeTab === "whatsapp" && (
               <motion.div
-                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                initial={{ opacity: 0, y: 10, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 20, scale: 0.95 }}
-                transition={{ duration: 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
-                className="absolute bottom-full left-0 right-0 mb-3 bg-white rounded-2xl shadow-2xl border border-[var(--cream-dark)] overflow-hidden"
+                exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                transition={{ duration: 0.25, ease: [0.21, 0.47, 0.32, 0.98] }}
+                className="absolute bottom-full right-4 mb-3 w-72 bg-white rounded-2xl shadow-2xl border border-[var(--cream-dark)] overflow-hidden"
               >
-                <div className="p-4">
-                  <p className="text-[var(--text-muted)] text-xs mb-3">How can we help you today?</p>
-                  <div className="space-y-2">
+                <div className="p-3">
+                  <p className="text-[var(--text-muted)] text-xs mb-2">How can we help you today?</p>
+                  <div className="space-y-1.5">
                     {quickQuestions.map((q) => (
                       <button
                         key={q.label}
@@ -168,7 +168,7 @@ export default function BookingBar() {
                           window.open(`https://wa.me/60129397686?text=${encodedMessage}`, "_blank");
                           setShowWhatsAppQuestions(false);
                         }}
-                        className="w-full text-left px-4 py-3 rounded-xl bg-[var(--cream)] hover:bg-[var(--cream-dark)] text-[var(--text-dark)] text-sm transition-colors duration-200 hover:shadow-sm"
+                        className="w-full text-left px-3 py-2.5 rounded-xl bg-[var(--cream)] hover:bg-[var(--cream-dark)] text-[var(--text-dark)] text-xs transition-colors duration-200"
                       >
                         {q.label}
                       </button>
