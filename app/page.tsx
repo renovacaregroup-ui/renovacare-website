@@ -3,7 +3,6 @@ import { Phone, MapPin, Mail, Globe, Shield, Heart, Leaf, Dna, Stethoscope, Awar
 import { FadeIn, StaggerContainer, StaggerItem, ScaleIn, PulseGlow } from "./components/animations";
 import HeroBackground from "./components/hero-background";
 import BookingBar from "./components/booking-bar";
-import WhatsAppButton from "./components/whatsapp-button";
 import ResumeBoundary from "./components/resume-boundary";
 
 export default function Home() {
@@ -634,7 +633,6 @@ export default function Home() {
       {/* Floating Booking Bar */}
       <ResumeBoundary>
         <BookingBar />
-        <WhatsAppButton />
       </ResumeBoundary>
     </div>
   );
