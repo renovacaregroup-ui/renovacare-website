@@ -103,8 +103,8 @@ export default function Terms() {
             <p>If you have any questions or require further clarification regarding these Terms &amp; Conditions, our team will be happy to assist you.</p>
             <div className="bg-[var(--cream)] rounded-xl p-4 mt-2">
               <p><strong>RenovaCare Clinic &amp; Wellness Centre</strong></p>
-              <p>Website: www.renovacare.my</p>
-              <p>Booking: app.renovacare.my/booking</p>
+              <p>Website: <a href="https://www.renovacare.my" className="text-[var(--primary-gold)] hover:underline" target="_blank" rel="noopener noreferrer">www.renovacare.my</a></p>
+              <p>Booking: <a href="https://app.renovacare.my/booking" className="text-[var(--primary-gold)] hover:underline" target="_blank" rel="noopener noreferrer">app.renovacare.my/booking</a></p>
             </div>
           </section>
         </div>
