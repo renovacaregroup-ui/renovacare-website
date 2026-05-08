@@ -79,8 +79,8 @@ export default function PrivacyPolicy() {
             <div className="bg-[var(--cream)] rounded-xl p-4 mt-2">
               <p><strong>RenovaCare Clinic & Wellness Centre</strong></p>
               <p>No 2-G, Jalan Eco Santuari 8/1A, Eco Santuari, Telok Panglima Garang, 42500 Selangor</p>
-              <p>Phone: +6012-939 7686</p>
-              <p>Email: enquiry@renovacare.my</p>
+              <p>Phone: <a href="tel:+60129397686" className="text-[var(--primary-gold)] hover:underline">+6012-939 7686</a></p>
+              <p>Email: <a href="mailto:enquiry@renovacare.my" className="text-[var(--primary-gold)] hover:underline">enquiry@renovacare.my</a></p>
             </div>
           </section>
         </div>
