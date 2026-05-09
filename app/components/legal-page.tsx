@@ -11,11 +11,11 @@ export default function LegalPage({ locale, pageKey }: { locale: Locale; pageKey
   return (
     <div className="min-h-screen bg-[var(--background)]">
       <div className="max-w-4xl mx-auto px-6 py-10">
-        <div className="flex flex-wrap items-center justify-between gap-3 mb-10">
+        <div className="flex items-center justify-between gap-3 mb-10">
           <a href={localizedHref(locale, "/")} className="text-sm text-[var(--text-muted)] hover:text-[var(--primary-gold)] transition-colors">
             RenovaCare
           </a>
-          <div className="w-full sm:w-auto sm:ml-auto">
+          <div className="ml-auto">
             <LanguageSwitcher currentLocale={locale} path={pageKey === "privacy" ? "/privacy-policy" : pageKey === "refund" ? "/refund-policy" : "/terms"} />
           </div>
         </div>
