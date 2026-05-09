@@ -35,7 +35,7 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
       transition={{ duration: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
       className="fixed bottom-0 left-0 right-0 z-50"
     >
-      <div className="max-w-3xl mx-auto px-4 pb-4 relative">
+      <div className="max-w-3xl mx-auto px-3 sm:px-4 pb-3 sm:pb-4 relative">
         {/* Quick Questions Popup */}
         <AnimatePresence>
           {showWhatsAppQuestions && activeTab === "whatsapp" && (
@@ -44,7 +44,7 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.95 }}
               transition={{ duration: 0.25, ease: [0.21, 0.47, 0.32, 0.98] }}
-              className="absolute bottom-full right-0 mb-2 w-72 bg-white rounded-2xl shadow-2xl border border-[var(--cream-dark)] overflow-hidden"
+              className="absolute bottom-full right-0 mb-2 w-[min(18rem,calc(100vw-1.5rem))] sm:w-72 bg-white rounded-2xl shadow-2xl border border-[var(--cream-dark)] overflow-hidden"
             >
               <div className="bg-[#25D366] px-4 py-3 flex items-center gap-3">
                 <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center shrink-0">
@@ -86,7 +86,7 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium transition-all duration-300 cursor-pointer ${
+                className={`flex-1 flex items-center justify-center gap-2 px-2 sm:px-4 py-3 text-xs sm:text-sm font-medium transition-all duration-300 cursor-pointer ${
                   activeTab === tab.id
                     ? "bg-[var(--primary-gold)] text-white"
                     : "bg-[var(--cream)] text-[var(--text-muted)] hover:bg-[var(--cream-dark)]"
@@ -98,10 +98,10 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
             ))}
           </div>
           {/* Content */}
-          <div className="p-4 flex items-center justify-between gap-4">
+          <div className="p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
             {activeTab === "appointment" && (
               <>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <p className="text-[var(--text-dark)] text-sm font-medium">{content.appointmentTitle}</p>
                   <p className="text-[var(--text-light)] text-xs">{content.appointmentDesc}</p>
                 </div>
@@ -109,7 +109,7 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
                   href="https://app.renovacare.my/booking"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[var(--primary-gold)] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[var(--brown)] transition-colors whitespace-nowrap inline-flex items-center gap-2"
+                  className="w-full sm:w-auto bg-[var(--primary-gold)] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[var(--brown)] transition-colors whitespace-nowrap inline-flex items-center justify-center gap-2"
                 >
                   {content.appointmentButton} <ChevronRight size={18} />
                 </a>
@@ -117,13 +117,13 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
             )}
             {activeTab === "whatsapp" && (
               <>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <p className="text-[var(--text-dark)] text-sm font-medium">{content.whatsappTitle}</p>
                   <p className="text-[var(--text-light)] text-xs">{content.whatsappDesc}</p>
                 </div>
                 <button
                   onClick={() => setShowWhatsAppQuestions(!showWhatsAppQuestions)}
-                  className="bg-[#25D366] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#1da851] transition-colors whitespace-nowrap inline-flex items-center gap-2"
+                  className="w-full sm:w-auto bg-[#25D366] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#1da851] transition-colors whitespace-nowrap inline-flex items-center justify-center gap-2"
                 >
                   {showWhatsAppQuestions ? <><X size={18} /> {content.whatsappClose}</> : <>{content.whatsappButton} <ChevronRight size={18} /></>}
                 </button>
@@ -131,7 +131,7 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
             )}
             {activeTab === "screening" && (
               <>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <p className="text-[var(--text-dark)] text-sm font-medium">{content.screeningTitle}</p>
                   <p className="text-[var(--text-light)] text-xs">{content.screeningDesc}</p>
                 </div>
@@ -139,7 +139,7 @@ export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
                   href="https://wa.me/60129397686?text=Hi%20RenovaCare%2C%20I%27d%20like%20to%20book%20the%20free%20basic%20health%20screening."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[var(--primary-gold)] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[var(--brown)] transition-colors whitespace-nowrap inline-flex items-center gap-2"
+                  className="w-full sm:w-auto bg-[var(--primary-gold)] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[var(--brown)] transition-colors whitespace-nowrap inline-flex items-center justify-center gap-2"
                 >
                   {content.screeningButton} <ChevronRight size={18} />
                 </a>

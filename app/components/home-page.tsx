@@ -19,7 +19,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
   return (
     <div className="flex flex-col min-h-screen bg-[var(--background)]">
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[var(--cream-dark)]">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap items-center justify-between gap-3">
           <a href={localizedHref(locale, "/")} className="cursor-pointer shrink-0">
             <Image
               src="/renovacare logo-01.png"
@@ -35,7 +35,9 @@ export default function HomePage({ locale }: { locale: Locale }) {
             <a href="#doctor" className="hover:text-[var(--primary-gold)] transition-colors">{content.nav.doctor}</a>
             <a href="#contact" className="hover:text-[var(--primary-gold)] transition-colors">{content.nav.contact}</a>
           </div>
-          <LanguageSwitcher currentLocale={locale} />
+          <div className="w-full sm:w-auto sm:ml-auto">
+            <LanguageSwitcher currentLocale={locale} />
+          </div>
         </div>
       </nav>
 
