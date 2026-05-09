@@ -3,39 +3,19 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Calendar, Phone, Gift, ChevronRight, X } from "lucide-react";
+import { siteContent } from "../../lib/site-content";
+import type { Locale } from "../../lib/locales";
 
-const quickQuestions = [
-  {
-    label: "I'd like to book a consultation",
-    message: "Hi RenovaCare, I'd like to book a consultation. Please advise on available slots.",
-  },
-  {
-    label: "Tell me about cancer recovery programmes",
-    message: "Hi RenovaCare, I'd like to know more about your cancer recovery support programmes.",
-  },
-  {
-    label: "What is NK Cell / Stem Cell Therapy?",
-    message: "Hi RenovaCare, I'd like to learn more about NK Cell Therapy and Stem Cell Therapy. Can you share more details?",
-  },
-  {
-    label: "Free health screening enquiry",
-    message: "Hi RenovaCare, I saw your free basic health screening offer. I'd like to know more and book a slot.",
-  },
-  {
-    label: "General enquiry",
-    message: "Hi RenovaCare, I have a question and would like some assistance.",
-  },
-];
-
-export default function BookingBar() {
+export default function BookingBar({ locale = "en" }: { locale?: Locale }) {
+  const content = siteContent[locale].bookingBar;
   const [isVisible, setIsVisible] = useState(false);
   const [activeTab, setActiveTab] = useState("appointment");
   const [showWhatsAppQuestions, setShowWhatsAppQuestions] = useState(false);
 
   const tabs = [
-    { id: "appointment", label: "Make Appointment", icon: <Calendar size={16} /> },
-    { id: "whatsapp", label: "WhatsApp Us", icon: <Phone size={16} /> },
-    { id: "screening", label: "Free Health Screening", icon: <Gift size={16} /> },
+    { id: "appointment", label: content.tabs.appointment, icon: <Calendar size={16} /> },
+    { id: "whatsapp", label: content.tabs.whatsapp, icon: <Phone size={16} /> },
+    { id: "screening", label: content.tabs.screening, icon: <Gift size={16} /> },
   ];
 
   useEffect(() => {
@@ -73,14 +53,14 @@ export default function BookingBar() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-medium text-sm">RenovaCare</p>
-                  <p className="text-white/80 text-xs">Typically replies within minutes</p>
+                  <p className="text-white font-medium text-sm">{content.popupTitle}</p>
+                  <p className="text-white/80 text-xs">{content.popupSubtitle}</p>
                 </div>
               </div>
               <div className="p-3">
-                <p className="text-[var(--text-muted)] text-xs mb-2">How can we help you today?</p>
+                <p className="text-[var(--text-muted)] text-xs mb-2">{content.popupPrompt}</p>
                 <div className="space-y-1.5">
-                  {quickQuestions.map((q) => (
+                  {content.quickQuestions.map((q) => (
                     <button
                       key={q.label}
                       onClick={() => {
@@ -122,8 +102,8 @@ export default function BookingBar() {
             {activeTab === "appointment" && (
               <>
                 <div className="flex-1">
-                  <p className="text-[var(--text-dark)] text-sm font-medium">Book Your Consultation</p>
-                  <p className="text-[var(--text-light)] text-xs">Schedule an appointment with Dr. Yek</p>
+                  <p className="text-[var(--text-dark)] text-sm font-medium">{content.appointmentTitle}</p>
+                  <p className="text-[var(--text-light)] text-xs">{content.appointmentDesc}</p>
                 </div>
                 <a
                   href="https://app.renovacare.my/booking"
@@ -131,29 +111,29 @@ export default function BookingBar() {
                   rel="noopener noreferrer"
                   className="bg-[var(--primary-gold)] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[var(--brown)] transition-colors whitespace-nowrap inline-flex items-center gap-2"
                 >
-                  Book Now <ChevronRight size={18} />
+                  {content.appointmentButton} <ChevronRight size={18} />
                 </a>
               </>
             )}
             {activeTab === "whatsapp" && (
               <>
                 <div className="flex-1">
-                  <p className="text-[var(--text-dark)] text-sm font-medium">Chat With Us</p>
-                  <p className="text-[var(--text-light)] text-xs">Get instant reply on WhatsApp</p>
+                  <p className="text-[var(--text-dark)] text-sm font-medium">{content.whatsappTitle}</p>
+                  <p className="text-[var(--text-light)] text-xs">{content.whatsappDesc}</p>
                 </div>
                 <button
                   onClick={() => setShowWhatsAppQuestions(!showWhatsAppQuestions)}
                   className="bg-[#25D366] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#1da851] transition-colors whitespace-nowrap inline-flex items-center gap-2"
                 >
-                  {showWhatsAppQuestions ? <><X size={18} /> Close</> : <>WhatsApp <ChevronRight size={18} /></>}
+                  {showWhatsAppQuestions ? <><X size={18} /> {content.whatsappClose}</> : <>{content.whatsappButton} <ChevronRight size={18} /></>}
                 </button>
               </>
             )}
             {activeTab === "screening" && (
               <>
                 <div className="flex-1">
-                  <p className="text-[var(--text-dark)] text-sm font-medium">FREE Basic Health Screening</p>
-                  <p className="text-[var(--text-light)] text-xs">Limited slots &middot; By appointment only</p>
+                  <p className="text-[var(--text-dark)] text-sm font-medium">{content.screeningTitle}</p>
+                  <p className="text-[var(--text-light)] text-xs">{content.screeningDesc}</p>
                 </div>
                 <a
                   href="https://wa.me/60129397686?text=Hi%20RenovaCare%2C%20I%27d%20like%20to%20book%20the%20free%20basic%20health%20screening."
@@ -161,7 +141,7 @@ export default function BookingBar() {
                   rel="noopener noreferrer"
                   className="bg-[var(--primary-gold)] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[var(--brown)] transition-colors whitespace-nowrap inline-flex items-center gap-2"
                 >
-                  Claim Now <ChevronRight size={18} />
+                  {content.screeningButton} <ChevronRight size={18} />
                 </a>
               </>
             )}
