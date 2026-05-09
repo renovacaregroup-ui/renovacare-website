@@ -324,9 +324,9 @@ export const siteContent: Record<Locale, SiteContent> = {
           height: 80,
         },
         {
-          title: "Guangzhou Modern Cancer Hospital",
+          title: "Modern Cancer Hospital GuangZhou",
           desc: "International JCI-accredited cancer hospital providing advanced oncology care and recovery resources.",
-          alt: "Guangzhou Modern Cancer Hospital",
+          alt: "Modern Cancer Hospital GuangZhou",
           image: "/GZ Hospital logo.png",
           width: 240,
           height: 80,
@@ -565,7 +565,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       desc: "RenovaCare 与多家成熟医疗及实验室伙伴合作，提供有结构的整合式康复支持。",
       cards: [
         { title: "Malaysian Genomics Resource Centre (MGRC)", desc: "具 cGMP 认证的细胞处理实验室，为细胞型计划提供质量、安全与合规支持。", alt: "Malaysian Genomics Resource Centre", image: "/MGRC logo.png", width: 180, height: 80 },
-        { title: "Guangzhou Modern Cancer Hospital", desc: "具国际 JCI 认证的癌症医院，提供先进肿瘤照护与康复资源。", alt: "Guangzhou Modern Cancer Hospital", image: "/GZ Hospital logo.png", width: 240, height: 80 },
+        { title: "广州现代肿瘤医院", desc: "具国际 JCI 认证的癌症医院，提供先进肿瘤照护与康复资源。", alt: "广州现代肿瘤医院", image: "/GZ Hospital logo.png", width: 240, height: 80 },
       ],
     },
     doctor: {
@@ -771,7 +771,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       desc: "RenovaCare bekerjasama dengan rakan perubatan dan makmal yang mantap untuk menyediakan sokongan pemulihan yang tersusun dan integratif.",
       cards: [
         { title: "Malaysian Genomics Resource Centre (MGRC)", desc: "Makmal pemprosesan sel bertauliah cGMP yang menyokong kualiti, keselamatan, dan pematuhan bagi program berasaskan sel.", alt: "Malaysian Genomics Resource Centre", image: "/MGRC logo.png", width: 180, height: 80 },
-        { title: "Guangzhou Modern Cancer Hospital", desc: "Hospital kanser bertaraf antarabangsa dengan akreditasi JCI yang menyediakan rawatan onkologi lanjutan dan sumber pemulihan.", alt: "Guangzhou Modern Cancer Hospital", image: "/GZ Hospital logo.png", width: 240, height: 80 },
+        { title: "Modern Cancer Hospital GuangZhou", desc: "Hospital kanser bertaraf antarabangsa dengan akreditasi JCI yang menyediakan rawatan onkologi lanjutan dan sumber pemulihan.", alt: "Modern Cancer Hospital GuangZhou", image: "/GZ Hospital logo.png", width: 240, height: 80 },
       ],
     },
     doctor: {
