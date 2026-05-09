@@ -180,7 +180,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       title: ["Doctor-Led Integrative", "Oncology Support Care"],
       desc: "Integrating medical care, immune support, regenerative therapies, and personalised recovery programmes to support your journey after cancer treatment.",
       highlight: "Restore Strength • Rebuild Resilience • Enhance Quality of Life",
-      subline: "重塑健康 · 重建体能 · 康复调养",
+      subline: "",
     },
     positioning: {
       titleStart: "Beyond Treatment - ",
@@ -480,7 +480,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       title: ["医生主导的整合式", "肿瘤康复支持护理"],
       desc: "结合医疗照护、免疫支持、再生疗法及个性化康复计划，在癌症治疗后持续陪伴您的恢复旅程。",
       highlight: "重塑健康 • 重建体能 • 提升生活质量",
-      subline: "重塑健康 · 重建体能 · 康复调养",
+      subline: "",
     },
     positioning: {
       titleStart: "治疗之后，更需要",
@@ -686,7 +686,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       title: ["Penjagaan Sokongan Onkologi", "Integratif Dipimpin Doktor"],
       desc: "Menggabungkan rawatan perubatan, sokongan imun, terapi regeneratif, dan program pemulihan yang diperibadikan untuk menyokong perjalanan anda selepas rawatan kanser.",
       highlight: "Pulihkan Kekuatan • Bina Semula Ketahanan • Tingkatkan Kualiti Hidup",
-      subline: "重塑健康 · 重建体能 · 康复调养",
+      subline: "",
     },
     positioning: {
       titleStart: "Selepas rawatan, yang paling penting ialah ",

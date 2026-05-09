@@ -63,9 +63,11 @@ export default function HomePage({ locale }: { locale: Locale }) {
             <p className="text-[var(--primary-gold)] font-medium text-lg mb-2">
               {content.hero.highlight}
             </p>
-            <p className="text-[var(--text-muted)] text-base">
-              {content.hero.subline}
-            </p>
+            {content.hero.subline ? (
+              <p className="text-[var(--text-muted)] text-base">
+                {content.hero.subline}
+              </p>
+            ) : null}
           </FadeIn>
         </div>
       </section>
