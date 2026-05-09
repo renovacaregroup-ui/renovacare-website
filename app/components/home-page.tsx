@@ -19,23 +19,24 @@ export default function HomePage({ locale }: { locale: Locale }) {
   return (
     <div className="flex flex-col min-h-screen bg-[var(--background)]">
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[var(--cream-dark)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
-          <a href={localizedHref(locale, "/")} className="cursor-pointer shrink-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 lg:py-5 flex items-center justify-between gap-3 lg:grid lg:grid-cols-[240px_1fr_240px] lg:gap-8">
+          <a href={localizedHref(locale, "/")} className="cursor-pointer shrink-0 lg:w-[220px]">
             <Image
               src="/renovacare logo-01.png"
               alt="RenovaCare Clinic & Wellness Centre"
               width={200}
               height={50}
               priority
+              className="w-[170px] sm:w-[190px] lg:w-[220px] h-auto"
             />
           </a>
-          <div className="hidden md:flex items-center gap-8 text-sm text-[var(--text-muted)]">
+          <div className="hidden lg:flex items-center justify-center gap-10 text-[15px] text-[var(--text-muted)]">
             <a href="#services" className="hover:text-[var(--primary-gold)] transition-colors">{content.nav.services}</a>
             <a href="#about" className="hover:text-[var(--primary-gold)] transition-colors">{content.nav.about}</a>
             <a href="#doctor" className="hover:text-[var(--primary-gold)] transition-colors">{content.nav.doctor}</a>
             <a href="#contact" className="hover:text-[var(--primary-gold)] transition-colors">{content.nav.contact}</a>
           </div>
-          <div className="ml-auto">
+          <div className="ml-auto lg:ml-0 lg:flex lg:justify-end">
             <LanguageSwitcher currentLocale={locale} />
           </div>
         </div>
