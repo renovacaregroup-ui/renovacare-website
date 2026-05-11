@@ -18,6 +18,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
 
   return (
     <div className="flex flex-col min-h-screen bg-[var(--background)]">
+      <header>
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[var(--cream-dark)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 lg:py-5 flex items-center justify-between gap-3 lg:grid lg:grid-cols-[240px_1fr_240px] lg:gap-8">
           <a href={localizedHref(locale, "/")} className="cursor-pointer shrink-0 lg:w-[220px]">
@@ -41,7 +42,9 @@ export default function HomePage({ locale }: { locale: Locale }) {
           </div>
         </div>
       </nav>
+      </header>
 
+      <main>
       <section className="relative bg-gradient-to-b from-[var(--cream)] to-[var(--background)] py-24 md:py-32 overflow-hidden">
         <ResumeBoundary>
           <HeroBackground />
@@ -389,6 +392,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           <p className="text-[var(--text-light)] text-sm leading-relaxed">{content.disclaimer}</p>
         </div>
       </section>
+      </main>
 
       <footer id="contact" className="bg-[var(--text-dark)] text-white py-16">
         <div className="max-w-7xl mx-auto px-6">

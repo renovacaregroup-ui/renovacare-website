@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.renovacare.my/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.renovacare.my/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.renovacare.my/zh/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.renovacare.my/ms/" />
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.renovacare.my/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.renovacare.my/zh/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.renovacare.my/ms/" />
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/ms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.renovacare.my/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.renovacare.my/zh/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.renovacare.my/ms/" />
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.renovacare.my/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.renovacare.my/zh/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.renovacare.my/ms/privacy-policy/" />
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/refund-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.renovacare.my/refund-policy/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.renovacare.my/zh/refund-policy/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.renovacare.my/ms/refund-policy/" />
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.renovacare.my/terms/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://www.renovacare.my/zh/terms/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.renovacare.my/ms/terms/" />
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/zh/privacy-policy/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/zh/refund-policy/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/zh/terms/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/ms/privacy-policy/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/ms/refund-policy/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.renovacare.my/ms/terms/</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>
